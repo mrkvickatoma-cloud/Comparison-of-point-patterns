@@ -56,12 +56,12 @@ The script will simulate two point patterns on a $10 \times 10\text{ km}$ road n
 > **Important Note on Coordinate Systems (CRS):**  
 > Always project your spatial data into a **planar metric coordinate system** (in meters, such as UTM or S-JTSK `EPSG:5514` for Czechia) before running the tests. Do **not** use unprojected GPS coordinates (longitude/latitude in degrees, `EPSG:4326`), because the smoothing bandwidth `h` is specified in map units (meters).
 
-### A. Planar (2D) Comparison (`Crashes.R`)
+### A. Planar (2D) Comparison (`Comparison_of_2pp_2D.R`)
 
 Use this test when your events can occur anywhere within a 2D study region (polygon) or for a macro-scale regional overview:
 
 ```r
-source("Crashes.R")
+source("Comparison_of_2pp_2D.R")
 
 # X1 and X2 must be 'ppp' point pattern objects (from the 'spatstat' package)
 # defined on the same observation window W (in meters).
@@ -78,12 +78,12 @@ res_2d <- test_permutation_kde_env(
 plot(res_2d, what = c("obs", "lo", "hi", "lo.sign", "hi.sign"))
 ```
 
-### B. Linear Network Comparison (`CrashesLN.R`)
+### B. Linear Network Comparison (`Comparison_of_2pp_LN.R`)
 
 Use this test when your events are strictly constrained to a road, street, or river network (`linnet` / `lpp` objects in `spatstat.linnet`):
 
 ```r
-source("CrashesLN.R")
+source("Comparison_of_2pp_LN.R")
 
 # LPP1 and LPP2 must be 'lpp' objects on the same linear network L (in meters).
 res_net <- test_permutation_kde_env_linnet(
