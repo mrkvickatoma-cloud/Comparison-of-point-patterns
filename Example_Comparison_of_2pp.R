@@ -9,7 +9,7 @@
 #
 # PURPOSE OF THIS SCRIPT:
 #   This self-contained script demonstrates how to use both functions in this
-#   repository (Crashes.R and CrashesLN.R) without needing any external
+#   repository (Comparison_of_2pp_2D.R and Comparison_of_2pp_LN.R) without needing any external
 #   data files. It simulates a realistic road-safety scenario on a 10 x 10 km
 #   road network mimicking the case study in Section 5 of the paper:
 #

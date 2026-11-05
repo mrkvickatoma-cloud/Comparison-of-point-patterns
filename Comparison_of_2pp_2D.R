@@ -1,5 +1,5 @@
 # ==============================================================================
-# Crashes.R
+# Comparison_of_2pp_2D.R
 # Planar (2D) Permutation-Based Kernel Density Difference Test with Global FDR
 # ==============================================================================
 # Accompanying code for the paper:

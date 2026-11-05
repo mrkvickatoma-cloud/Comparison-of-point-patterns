@@ -1,5 +1,5 @@
 # ==============================================================================
-# CrashesLN.R
+# Comparison_of_2pp_LN.R
 # Linear Network Permutation-Based Kernel Density Difference Test with Global FDR
 # ==============================================================================
 # Accompanying code for the paper:
